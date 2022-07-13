@@ -1,0 +1,89 @@
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+/* header CSS start */
+
+header label {
+    cursor: pointer;
+}
+
+#nav-switch {
+    display: none;
+}
+
+header label[for="nav-switch"] .open {
+    display: none;
+}
+
+header nav {
+    width: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid black;
+    background: #fff;
+}
+
+
+
+header input:checked~nav {
+    width: 200px;
+    transition: all 0.5s ease;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+header input:checked~label .closed {
+    display: none;
+}
+
+header input:checked~label .open {
+    display: inline;
+}
+
+header nav ul {
+    padding-left: 0;
+}
+
+header nav li {
+    list-style: none;
+    width: 160px;
+}
+
+header nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+header nav li:hover a {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+}
+/* header CSS start */
+
+
+/* main section start */
+section {
+    padding: 20px;
+}
+/* main section end */
+
+
+/* Footer CSS start */
+footer {
+    background: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Footer CSS end */
